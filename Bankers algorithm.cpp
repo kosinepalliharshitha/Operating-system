@@ -8,7 +8,7 @@ int main()
 	printf("enter the burst time for the processes\n");
 	for(i=0;i<n;i++)
 	{
-		printf("p%d = ",i+1);
+		printf("p%d = ",i);
 		scanf("%d",&bt[i]);
 	}
 	wt[0]=0;
@@ -34,3 +34,10 @@ printf("\naverage waiting time of the above processes: %f",avgwt);
 printf("\naverage turn around time of above processes: %f",avgtat);
 return 0;
 }
+
+10.bankers algorithm
+#include<stdio.h>
+int main()
+{
+	int n,r,i,j,k;
+	n=5;
